@@ -1,0 +1,21 @@
+.navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    a {
+      display: block;
+      width: 100%;
+    }
+  
+    .MuiListItemButton-root {
+      flex-grow: unset;
+      width: 100%;
+    }
+  
+    .settings {
+      margin-top: auto;
+    }
+  }
+  

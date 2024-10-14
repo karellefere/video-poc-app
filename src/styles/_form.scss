@@ -1,0 +1,89 @@
+@import './colors';
+
+$border-radius: 8px;
+$border-color: #d2d2d2;
+$darker-border: rgba(#000, 0.15);
+
+.dropdown-control {
+  align-self: flex-start;
+
+  &.MuiFormControl-root {
+    display: block;
+  }
+
+  .MuiFormControl-root {
+    display: block;
+  }
+
+  .simple-select {
+    background: #fff;
+    border-radius: $border-radius;
+    color: $charcoal;
+    border: 1px solid #cbd7df;
+    &.Mui-error {
+      border: 1px solid $error;
+    }
+
+    fieldset {
+      transition: all 0.2s ease-in-out;
+      border-radius: $border-radius;
+      border: none;
+    }
+
+    &:hover {
+      fieldset {
+        border: none;
+      }
+    }
+
+    .select-dropdown {
+      padding: 9px 17px;
+    }
+
+    &.Mui-focused {
+      fieldset {
+        border: none;
+      }
+    }
+
+    &.Mui-disabled.Mui-error {
+      border: 1px solid $error;
+
+      fieldset {
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.dropdown-wrapper {
+  .MuiPaper-root {
+    border-radius: $border-radius;
+  }
+
+  .dropdown-paper {
+    ul {
+      border-radius: $border-radius;
+      background: #fff;
+      border: 1px solid rgba(#000000, 0.15);
+    }
+  }
+
+  .dropdown-list {
+    li {
+      padding: 8px 15px;
+      border-bottom: 1px solid rgba($border-color, 0.5);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.Mui-error {
+  border-color: $error;
+  color: $error;
+  .select-dropdown {
+    color: $error;
+  }
+}

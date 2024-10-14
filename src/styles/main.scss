@@ -1,0 +1,59 @@
+@import './_colors';
+@import './reset.scss';
+
+$scrollbar-width: 10px;
+$appMinWidth: 690px;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: $lightGray;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+
+  svg {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  &:hover,
+  &.active {
+    color: $lightBlue;
+  }
+}
+
+h2 {
+  color: $heading-2;
+}
+
+h3 {
+  color: $heading-3;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.header,
+.main-wrapper .MuiContainer-root {
+  min-width: $appMinWidth;
+}
+
+p {
+  color: $text-color;
+}
+
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: $scrollbar-width;
+  background-color: rgba(0, 6, 6, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $scrollbar-width;
+  background-color: rgba(1, 7, 7, 0.2);
+}

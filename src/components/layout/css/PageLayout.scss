@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+.drawer {
+  width: 250px;
+
+  .MuiDrawer-paper {
+    background-color: $black;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  a {
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    svg,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:hover,
+    &.active {
+      &,
+      path {
+        transition: all 0.2s ease-in-out;
+        color: $lightBlue;
+        fill: $lightBlue;
+      }
+    }
+  }
+}
+
+.main-wrapper {
+  flex-grow: 1;
+  height: 100vh;
+  overflow: auto;
+
+  .MuiContainer-root {
+    max-width: unset;
+  }
+
+  .page-content {
+    margin-bottom: 20px;
+  }
+}
